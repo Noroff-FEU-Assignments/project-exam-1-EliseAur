@@ -13,13 +13,6 @@ footer {
     background: #605654;
 }
 
-header,
-header a,
-footer,
-footer a {
-    color: white;
-}
-
 img {
     width: 100%;
 }
@@ -30,6 +23,19 @@ h2,
 nav a,
 .copy {
     font-family: "lobster", sans-serif;
+}
+
+h1,
+h2 {
+    color: #605654;
+}
+
+header,
+header a,
+footer,
+footer a,
+footer h2 {
+    color: white;
 }
 
 h1 {
@@ -53,6 +59,22 @@ footer li {
 
 .cta {
     text-transform: uppercase;
+    background: #763438;
+    padding: 7px;
+    text-align: center;
+    color: white;
+}
+
+.cta_read-more {
+    padding: 7px;
+    border: 3.5px solid #763438;
+    color: #763438;
+    background: white;
+    width: 150px;
+}
+
+.date {
+    font-style: italic;
 }
 
 /* LINKS */
@@ -76,11 +98,25 @@ footer li a {
     margin: 0;
 }
 
-/* .cta {
-    width: 170px;
-    padding: 8px 5px 3px 5px;
-    margin: 10px 20px;
-} */
+.categories {
+    font-weight: bold;
+}
+
+.categories span {
+    text-decoration: underline;
+    color: #763438;
+}
+
+.top-link {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.top-link a {
+    color: #763438;
+    text-decoration: underline;
+}
 
 /* HEADER */
 .logo-mobile {
@@ -106,12 +142,12 @@ nav,
 #menu-checkbox:checked ~ nav {
     width: 100%;
     display: block;
-    border-bottom: 3px solid #605654;
 }
 
 #menu-checkbox:checked ~ nav a {
     padding: 20px 20px 25px 25px;
     text-align: center;
+    border-top: 1px solid white;
 }
 
 #menu-checkbox:checked ~ nav a:hover {
@@ -128,6 +164,10 @@ footer h2 {
     margin-bottom: 0;
 }
 
+.footer-links {
+    padding: 15px;
+}
+
 .footer-links i {
     font-size: 2.5em;
 }
@@ -135,8 +175,13 @@ footer h2 {
 footer ul {
     padding: 0;
     margin: 10px 0 0 5px;
+    list-style: none;
 }
 
 footer li {
     margin-bottom: 7px;
+}
+
+.copy {
+    padding: 15px;
 }

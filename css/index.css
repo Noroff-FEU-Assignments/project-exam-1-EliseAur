@@ -1,0 +1,70 @@
+body {
+    max-width: 360px;
+}
+
+.main-image {
+    background: url("../images/outdoors-13-after-umbrella.jpg") center top no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.main-text {
+    background: #f0f0f0;
+    padding: 15px 0;
+}
+
+.main-text div {
+    margin: 10px 20px;
+}
+
+.main-text h1 {
+    margin: 0;
+}
+
+/*Latest posts*/
+
+.post {
+    display: flex;
+    flex-direction: column;
+    background: #605654;
+}
+
+.latest-posts {
+    margin: 20px 8px;
+    background: #f0f0f0;
+    padding: 20px 0;
+}
+
+.latest-posts > * {
+    margin: 0 10px;
+}
+.post-bg-brown {
+    position: relative;
+    top: -20px;
+}
+
+.post-text {
+    background: white;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.post-text > * {
+    margin: 12px 6px;
+}
+
+.cta_read-more {
+    margin: 15px auto;
+}
+
+.latest-posts h2 {
+    margin-bottom: 10px;
+}
