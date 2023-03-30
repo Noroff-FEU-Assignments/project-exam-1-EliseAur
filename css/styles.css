@@ -167,6 +167,7 @@ nav,
 }
 
 /* FOOTER */
+
 .logo-footer {
     width: 160px;
 }
@@ -177,6 +178,8 @@ footer h2 {
 
 .footer-links {
     padding: 20px 50px;
+    max-width: 600px;
+    margin: auto;
 }
 
 .footer-links i {
@@ -203,6 +206,5 @@ footer li {
 }
 
 .copy {
-    margin-left: 50px;
-    margin-top: 20px;
+    padding: 20px 50px;
 }

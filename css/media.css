@@ -13,6 +13,16 @@
     .front_text {
         flex: 1;
     }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .copy {
+        width: 600px;
+        margin: auto;
+    }
 }
 
 @media (min-width: 800px) {
@@ -71,6 +81,7 @@
         margin-top: 50px;
         font-size: 2em;
         padding: 7px;
+        border: 2px solid #605654;
     }
 
     .nav-menu a:hover {
