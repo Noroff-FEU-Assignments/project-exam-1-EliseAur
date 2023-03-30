@@ -176,7 +176,7 @@ footer h2 {
 }
 
 .footer-links {
-    padding: 15px;
+    padding: 20px 50px;
 }
 
 .footer-links i {
@@ -203,5 +203,6 @@ footer li {
 }
 
 .copy {
-    padding: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
