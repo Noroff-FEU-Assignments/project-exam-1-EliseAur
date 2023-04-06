@@ -23,6 +23,41 @@
         width: 600px;
         margin: auto;
     }
+
+    /* Post list */
+
+    .post-list,
+    .post-heading {
+        max-width: 980px;
+    }
+
+    .post-heading {
+        margin: auto;
+    }
+
+    .post-list .post {
+        flex-direction: row;
+    }
+
+    .post-list .post-text {
+        flex: 1;
+    }
+
+    .post-list .post-image {
+        flex: 1.2;
+    }
+
+    .post-heading {
+        flex-direction: row;
+    }
+
+    .search {
+        margin: 40px 15px 20px auto;
+    }
+
+    .search-field {
+        width: 300px;
+    }
 }
 
 @media (min-width: 800px) {

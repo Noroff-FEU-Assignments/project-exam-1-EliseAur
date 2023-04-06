@@ -1,0 +1,61 @@
+body {
+    background: #f0f0f0;
+}
+
+.post-heading {
+    display: flex;
+    flex-direction: column;
+}
+.search {
+    margin: 0 15px;
+}
+
+.search form {
+    display: flex;
+}
+
+.search-btn {
+    color: white;
+    background-color: #763438;
+    border: 3.9px solid #763438;
+    height: 35px;
+    box-sizing: content-box;
+    padding-left: 7px;
+}
+
+.fa-search {
+    font-size: 1.8em;
+}
+
+.search-field {
+    border: 3.9px solid #763438;
+    height: 35px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.post-list {
+    margin: 40px auto;
+}
+
+.post {
+    background: white;
+    margin: 15px;
+}
+
+.post-text {
+    background: white;
+}
+
+.desktop-text {
+    display: none;
+}
+
+img {
+    height: 100%;
+}

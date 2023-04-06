@@ -25,8 +25,6 @@
     grid-gap: 20px;
 }
 .post {
-    display: flex;
-    flex-direction: column;
     background: #605654;
 }
 
@@ -42,18 +40,6 @@
 .post-bg-brown {
     position: relative;
     top: -20px;
-}
-
-.post-text {
-    background: white;
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    padding: 3px 0;
-}
-
-.post-text > * {
-    margin: 12px 6px;
 }
 
 .cta_read-more {
