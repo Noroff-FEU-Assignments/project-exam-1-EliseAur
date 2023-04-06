@@ -2,9 +2,11 @@ body {
     background: #f0f0f0;
 }
 
-.post-heading {
+.heading-box {
     display: flex;
     flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
 }
 .search {
     margin: 0 15px;
@@ -41,6 +43,7 @@ h1 {
 
 .post-list {
     margin: 40px auto;
+    max-width: 500px;
 }
 
 .post {
