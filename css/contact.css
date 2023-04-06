@@ -27,6 +27,26 @@ legend {
     display: none;
 }
 
+/* Message error */
+/* .form-error {
+    display: block;
+    color: #763438;
+    font-weight: bold;
+} */
+
+/* .fill-area {
+    border: 2px solid #763438;
+    padding: 10px;
+} */
+
+/* Message success */
+.valid-input-icon {
+    color: #3a5964;
+    margin-left: 10px;
+    display: none;
+    /* display: inline-block; */
+}
+
 .form-box {
     background-color: #f0f0f0;
     display: flex;
@@ -76,4 +96,22 @@ textarea {
 
 button {
     width: 164px;
+}
+
+.top-link {
+    max-width: 500px;
+    margin: 10px auto 30px;
+    text-align: left;
+}
+
+.top-link a {
+    text-align: left;
+    margin-left: 15px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #4a4443;
+    box-shadow: none;
 }
