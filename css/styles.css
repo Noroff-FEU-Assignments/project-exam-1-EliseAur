@@ -23,6 +23,7 @@ h2,
 nav a,
 .copy {
     font-family: "lobster", sans-serif;
+    font-weight: lighter;
 }
 
 h1,
@@ -43,7 +44,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2em;
+    font-size: 2.5em;
 }
 
 h3,
@@ -174,7 +175,6 @@ nav,
 
 footer h2 {
     margin-bottom: 0;
-    font-weight: lighter;
 }
 
 .footer-links {
@@ -208,7 +208,6 @@ footer li {
 
 .copy {
     padding: 20px 50px;
-    font-weight: lighter;
 }
 
 /* POSTS */
