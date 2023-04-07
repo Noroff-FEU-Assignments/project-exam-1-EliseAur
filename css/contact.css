@@ -2,6 +2,12 @@ body {
     background: #f0f0f0;
 }
 
+.contact-image {
+    background: url("../images/winter-4-night-bluesky-cropped.jpg") bottom no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+
 .heading-contact {
     max-width: 500px;
     margin: auto;
@@ -9,7 +15,7 @@ body {
 
 h1 {
     margin-left: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 fieldset {
@@ -64,9 +70,8 @@ img {
 }
 
 .form-text {
-    text-align: left;
     background: #f0f0f0;
-    margin: 20px 15px;
+    margin: 15px 15px 40px;
 }
 
 .fill-area {

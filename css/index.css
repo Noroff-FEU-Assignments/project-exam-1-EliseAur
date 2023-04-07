@@ -15,6 +15,10 @@
     padding: 15px 20px;
 }
 
+h1 span {
+    display: inline block;
+}
+
 .front_text h1 {
     margin: 0;
 }
@@ -24,20 +28,23 @@
 .slider {
     display: grid;
     grid-gap: 20px;
+    max-width: 550px;
+    margin: 0 auto;
 }
 .post {
     background: #605654;
 }
 
 .latest-posts {
-    margin: 20px 0;
     background: #f0f0f0;
-    padding: 0 15px;
+    padding: 20px 15px 40px 15px;
+    margin: 20px 0;
 }
 
-.latest-posts > * {
+/* .latest-posts > * {
     margin: 0 10px;
-}
+} */
+
 .post-bg-brown {
     position: relative;
     top: -20px;
@@ -45,5 +52,5 @@
 
 .latest-posts h2 {
     margin-bottom: 10px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
