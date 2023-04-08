@@ -1,19 +1,18 @@
 const postURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts";
-const featuredImageURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts?_embed";
+
 const postContainer = document.querySelector(".post-list");
 const loader = document.querySelector(".loader");
 
 async function getPosts() {
     try {
         const response = await fetch(postURL);
-        const getResults = await response.json();
-        console.log(getResults);
-        createHTML(getResults);
+        const getPostResults = await response.json();
+        console.log(getPostResults);
+        createHTML(getPostResults);
     } catch (error) {
         console.log(error);
     }
 }
-
 getPosts();
 
 function createHTML(posts) {
@@ -24,14 +23,14 @@ function createHTML(posts) {
 
         <div class="post">
         <div class="post-image">
-            <a href="post-details.html" class="image-link"><img src="${post._embedded}" alt="" /></a>
+            <a href="post-details.html" class="image-link"><img src="${post.better_featured_image.source_url}" alt="" /></a>
         </div>
         <div class="post-text">
             <h3>${post.title.rendered}</h3>
-            <p class="date">January 18, 2020</p>
-            <p class="text">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <a href="post-details.html" class="cta cta_read-more">Read more</a>
-            <p class="categories">Categories: <span>Color</span> , <span>Interior</span></p>
+            <p class="date">${post.date}</p>
+            <p class="text">${post.excerpt.rendered}</p>
+            <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+            <p class="categories">Categories: <span>${post.tags[0]}</span> , <span></span></p>
         </div>
     </div>`;
     });
