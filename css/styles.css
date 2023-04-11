@@ -75,14 +75,14 @@ footer li {
 .cta_read-more {
     padding: 7px;
     border: 3.5px solid #763438;
-    color: #763438;
-    background: white;
+    color: white;
+    background: #763438;
     width: 150px;
 }
 
 .cta_read-more:hover {
-    background: #763438;
-    color: white;
+    background: white;
+    color: #763438;
 }
 
 .date {
@@ -241,6 +241,7 @@ footer li {
     margin: 12px 6px;
 }
 
-.cta_read-more {
+.cta_read-more,
+.cta_more {
     margin: 15px auto;
 }

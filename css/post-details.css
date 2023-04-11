@@ -2,6 +2,7 @@
     background-color: white;
     margin: 40px 15px;
     padding: 10px 0 20px;
+    max-width: 1070px;
 }
 
 .post-detail-heading {
@@ -17,8 +18,8 @@
 }
 
 h3 {
-    font-size: 2em;
-    margin-top: 10px;
+    font-size: 2.3em;
+    margin: 10px 15px;
 }
 
 h4 {
@@ -26,9 +27,52 @@ h4 {
     margin: 15px;
 }
 
-.image-box {
+.heading-box {
+    max-width: 699px;
+}
+
+figure img {
+    height: auto;
+}
+
+.wp-block-gallery {
     display: grid;
-    margin: 0 10px;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 8px;
+    grid-gap: 5px;
+    margin: 20px 15px;
+}
+
+.wp-block-image {
+    margin: 0;
+}
+
+p {
+    margin: 15px;
+}
+
+.wp-block-post-featured-image {
+    margin: 15px;
+}
+
+.wp-block-post-date {
+    text-align: center;
+    font-style: italic;
+}
+
+.wp-block-categories {
+    list-style: none;
+    padding-left: 0;
+    margin: 15px;
+    text-align: center;
+}
+
+.wp-block-categories li {
+    display: inline-block;
+    margin: 2px;
+    background: #763438;
+    padding: 5px 8px;
+}
+
+.wp-block-categories li a {
+    color: white;
 }
