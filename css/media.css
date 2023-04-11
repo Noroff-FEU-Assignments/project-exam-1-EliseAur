@@ -109,6 +109,23 @@
     .front_text .cta {
         margin-top: 40px;
     }
+
+    /* posts  */
+    .post-list .post-text {
+        margin: 0 35px;
+    }
+
+    /* post details  */
+
+    .wp-block-post-featured-image {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .post-details-box {
+        max-width: 800px;
+        margin: auto;
+    }
 }
 
 @media (min-width: 900px) {
@@ -141,7 +158,7 @@
         margin-top: 50px;
         font-size: 2em;
         padding: 7px;
-        border: 2px solid #605654;
+        border: 2px solid #4a4443;
     }
 
     .nav-menu a:hover {

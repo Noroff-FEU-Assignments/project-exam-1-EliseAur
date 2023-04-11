@@ -1,6 +1,6 @@
 .post-details {
     background-color: white;
-    margin: 40px 15px;
+    margin: 40px 0;
     padding: 10px 0 20px;
     max-width: 1070px;
 }
@@ -9,22 +9,16 @@
     text-align: center;
 }
 
-.post-detail-image {
-    margin: 0 10px;
-}
-
-.post-details-text {
-    margin: 0 15px;
-}
-
 h3 {
     font-size: 2.3em;
     margin: 10px 15px;
+    color: #4a4443;
 }
 
 h4 {
     font-size: 1.7em;
     margin: 15px;
+    color: #4a4443;
 }
 
 .heading-box {

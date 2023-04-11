@@ -61,7 +61,7 @@ h1 {
 
 .cta_read-more {
     max-width: 280px;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .cta-box {
@@ -77,4 +77,8 @@ h1 {
     height: 200px;
     background-size: cover;
     background-position: center;
+}
+
+h3 {
+    color: #4a4443;
 }
