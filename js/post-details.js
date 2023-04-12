@@ -31,3 +31,8 @@ function createHTML(postDetails) {
     </div>
     `;
 }
+
+// Modal
+
+const images = document.querySelectorAll(".wp-block-image img");
+console.log(images);

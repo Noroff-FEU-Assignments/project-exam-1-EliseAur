@@ -70,3 +70,69 @@ p {
 .wp-block-categories li a {
     color: white;
 }
+
+/* Modal */
+
+/* modal popup styles */
+
+.post-details-box {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+}
+
+/* .post-details-box .wp-block-gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+} */
+
+.post-details-box .wp-block-gallery .wp-block-image {
+    /* height: 200px;
+    width: 200px; */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post-details-box .wp-block-gallery .wp-block-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.2s linear;
+}
+
+.post-details-box .wp-block-gallery .wp-block-image:hover img {
+    transform: scale(1.1);
+}
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span {
+    top: 0;
+    right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 750px;
+    object-fit: cover;
+}
