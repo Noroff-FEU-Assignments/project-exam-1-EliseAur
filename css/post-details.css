@@ -2,11 +2,13 @@
     background-color: white;
     margin: 40px 0;
     padding: 10px 0 20px;
-    max-width: 1070px;
+    /* max-width: 1070px; */
 }
 
 .post-detail-heading {
     text-align: center;
+    max-width: 800px;
+    margin: 30px auto;
 }
 
 h3 {
@@ -69,6 +71,17 @@ p {
 }
 
 .wp-block-categories li a {
+    color: white;
+}
+
+.wp-block-post-terms {
+    text-align: center;
+}
+
+.wp-block-post-terms a {
+    margin: 2px;
+    background: #763438;
+    padding: 5px 8px;
     color: white;
 }
 

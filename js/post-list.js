@@ -30,7 +30,6 @@ function createHTML(posts) {
             <time class="date">${post.date}</time>
             <p class="text">${post.excerpt.rendered}</p>
             <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
-            <p class="categories">Categories: <span>${post.tags[0]}</span> , <span></span></p>
         </div>
     </div>`;
     });
