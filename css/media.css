@@ -41,40 +41,19 @@
 
     /* Post list */
 
-    .post-list,
-    .heading-box {
-        max-width: 1100px;
-    }
-
-    .heading-box {
-        margin: auto;
-    }
-
-    .post-list .post {
-        flex-direction: row;
-    }
-
-    .post-list .post-text {
-        flex: 1;
-    }
-
     .post-list-image {
-        flex: 1.2;
+        height: 300px;
     }
 
-    .post-list-image {
-        height: 400px;
-    }
-
-    .heading-box {
-        flex-direction: row;
-    }
-
-    .search {
+    .heading-box_details .search {
         margin: 40px 15px 20px auto;
     }
 
-    .search-field {
+    .heading-box_details {
+        flex-direction: row;
+    }
+
+    .heading-box_details .search-field {
         width: 300px;
     }
 
@@ -174,6 +153,40 @@
     .front_text {
         padding: 80px;
         max-width: 472px;
+    }
+
+    /*post list */
+    .post-list .post {
+        flex-direction: row;
+    }
+
+    .heading-box_posts {
+        flex-direction: row;
+    }
+
+    .heading-box_posts .search {
+        margin: 40px 15px 20px auto;
+    }
+
+    .heading-box_posts .search-field {
+        width: 300px;
+    }
+
+    .post-list .post-text {
+        flex: 1;
+    }
+
+    .post-list-image {
+        flex: 1.2;
+    }
+
+    .post-list,
+    .heading-box {
+        max-width: 900px;
+    }
+
+    .post-list-image {
+        height: 410px;
     }
 }
 
