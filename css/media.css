@@ -1,6 +1,16 @@
+@media (min-width: 470px) {
+    h1 span {
+        display: inline-block;
+    }
+}
+
 @media (min-width: 500px) {
     .post-text h3 {
         font-size: 2em;
+    }
+
+    .post-text div {
+        margin: 20px;
     }
 }
 
@@ -89,11 +99,6 @@
         margin-top: 40px;
     }
 
-    /* posts  */
-    .post-list .post-text {
-        margin: 0 35px;
-    }
-
     /* post details  */
 
     .wp-block-post-featured-image {
@@ -150,11 +155,6 @@
         padding: 7px;
     }
 
-    .front_text {
-        padding: 80px;
-        max-width: 472px;
-    }
-
     /*post list */
     .post-list .post {
         flex-direction: row;
@@ -177,12 +177,12 @@
     }
 
     .post-list-image {
-        flex: 1.2;
+        flex: 1;
     }
 
     .post-list,
     .heading-box {
-        max-width: 900px;
+        max-width: 1100px;
     }
 
     .post-list-image {
@@ -207,7 +207,10 @@
 
     .front_text p {
         font-size: 1.1em;
-        margin-top: 30px;
+    }
+
+    .post-list-image {
+        flex: 1.2;
     }
 }
 

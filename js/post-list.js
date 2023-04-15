@@ -26,10 +26,12 @@ function createHTML(posts) {
             <a href="post-details.html?id=${post.id}" class="image-link"></a>
         </div>
         <div class="post-text">
-            <h3>${post.title.rendered}</h3>
-            <time class="date">${post.date}</time>
-            <p class="text">${post.excerpt.rendered}</p>
-            <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+            <div>
+                <h3>${post.title.rendered}</h3>
+                <time class="date">${post.date}</time>
+                <p class="text">${post.excerpt.rendered}</p>
+                <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+            </div>
         </div>
     </div>`;
     });
