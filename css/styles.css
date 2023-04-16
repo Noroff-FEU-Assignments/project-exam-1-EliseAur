@@ -250,3 +250,25 @@ footer li {
 .cta_more {
     margin: 15px auto;
 }
+
+/* .post:hover {
+    transform: scale(1.03);
+    transition: all 800ms ease;
+} */
+
+.post-link {
+    text-decoration: none;
+    color: #4a4443;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.35rem;
+    text-decoration-color: #763438;
+}
+
+.post .date {
+    display: none;
+}

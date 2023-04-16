@@ -22,18 +22,18 @@ function createHTML(posts) {
         postContainer.innerHTML += `
 
         <div class="post">
-        <div class="post-list-image" style="background-image: url('${post.better_featured_image.source_url}')">
-            <a href="post-details.html?id=${post.id}" class="image-link"></a>
-        </div>
-        <div class="post-text">
-            <div>
-                <h3>${post.title.rendered}</h3>
-                <time class="date">${post.date}</time>
-                <p class="text">${post.excerpt.rendered}</p>
-                <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+            <div class="post-list-image" style="background-image: url('${post.better_featured_image.source_url}')">
+                <a href="post-details.html?id=${post.id}" class="image-link"></a>
             </div>
-        </div>
-    </div>`;
+            <div class="post-text">
+                <div>
+                    <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
+                    <time class="date">${post.date}</time>
+                    <p class="text">${post.excerpt.rendered}</p>
+                    <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+                </div>
+            </div>
+        </div>`;
     });
 }
 
