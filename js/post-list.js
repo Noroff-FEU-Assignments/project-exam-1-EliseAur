@@ -10,6 +10,8 @@ async function getPosts() {
         console.log(getPostResults);
         createHTML(getPostResults);
         seeMore();
+        // seeLastPosts();
+        // showRestPosts();
     } catch (error) {
         console.log(error);
     }
@@ -39,34 +41,137 @@ function createHTML(posts) {
 }
 
 function seeMore() {
-    const numberOfDisplayedPosts = 2;
+    // const numberOfDisplayedPosts = 1;
     const blogPosts = document.querySelectorAll(".post");
-    console.log(blogPosts);
-    // const displayedPosts = blogPosts.slice(0, 2);
-    // console.log(displayedPosts);
-    // showPosts(displayedPosts);
+    const blogPostArray = Array.from(blogPosts);
+    console.log(blogPostArray);
+    console.log(blogPostArray.length);
 
-    if (blogPosts.length > numberOfDisplayedPosts) {
-        const seeMoreButton = document.querySelector(".cta_more");
-        seeMoreButton.addEventListener("click", () => {
-            const seeAllPosts = posts.slice(-4);
+    const firstPosts = blogPostArray.slice(0, 2);
+    console.log(firstPosts);
+
+    const lastPosts = blogPostArray.slice(-4);
+    console.log(lastPosts);
+    lastPosts.forEach(function (hiddenPost) {
+        hiddenPost.style.display = "none";
+    });
+
+    const seeMoreButton = document.querySelector(".cta_more");
+    console.log(seeMoreButton);
+    seeMoreButton.onclick = function () {
+        console.log("hello");
+        const visiblelastPosts = blogPostArray.slice(-4);
+        visiblelastPosts.forEach(function (visiblePost) {
+            visiblePost.style.display = "block";
         });
-    }
+    };
 }
 
-// <div class="products">
-//     <a href="product.html?id=${product.id}"><img src="${product.images[0].src}" alt="${product.images[0].alt}" /></a>
-//     <div class="product-text">
-//     <h2 class="product-title">${product.name}</h2>
-//     <p class="price">${product.prices.price},-</p>
-//     <i class="${cssClass} fa-heart" data-id="${product.id}" data-name="${product.name}" data-price="${product.prices.price}" data-image="${product.images[0].src}" data-color1="${product.attributes[9].terms[0].name}" data-color2="${product.attributes[9].terms[1].name}" data-color3="${product.attributes[9].terms[2].name}"></i>
-//     <div class="color-box">
-//         <div class="color ${product.attributes[9].terms[0].name}"></div>
-//         <div class="color ${product.attributes[9].terms[1].name}"></div>
-//         <div class="color ${product.attributes[9].terms[2].name}"></div>
+// function seeLastPosts() {
+//     const seeMoreButton = document.querySelector(".cta_more");
+//     console.log(seeMoreButton);
+//     seeMoreButton.onclick = function () {
+//         console.log("hello");
+//         const lastPosts = blogPostArray.slice(-4);
+//         lastPosts.forEach(function (visiblePost) {
+//             visiblePost.style.display = "block";
+//         });
+//     };
+// }
 
-//     </div>
-//     <a href="product.html?id=${product.id}" class="cta cta-small">View</a>
-//     </div>
+// function seeMore() {
+//     let seeMoreButton = document.querySelector("#cta_more");
+//     let currentItem = 2;
 
-// </div>`;
+//     seeMoreButton.onclick = () => {
+//         let boxes = document.querySelectorAll(".post");
+//         for (var i = currentItem; i < currentItem + 2; i++) {
+//             boxes[i].style.display = "block";
+//         }
+
+//         currentItem += 2;
+//     };
+
+// const seeMoreButton = document.querySelector(".cta_more");
+// console.log(seeMoreButton);
+// seeMoreButton.onclick = function () {
+//     console.log("click");
+// };
+
+//     function showRestPosts() {}
+
+//     // restOfThePosts.forEach(function (restPost) {
+//     //     restPost.classList.add = "block";
+//     // });
+// };
+
+// const seeMoreButton = document.querySelector(".cta-box");
+// seeMoreButton.addEventListener("click", showRestPosts);
+
+// seeMoreButton.onclick = function () {
+// const restOfThePosts = blogPostArray.slice(-4);
+// restOfThePosts.forEach(function (makePostVisible) {
+//     console.log(restOfThePosts);
+//     makePostVisible.style.display = "block";
+// }
+// console.log("click");
+// };
+
+// if (blogPostArray > numberOfDisplayedPosts) {
+//     const seeMoreButton = document.querySelector(".cta_more");
+//     // seeMoreButton.addEventListener("click", seeMorePosts);
+
+//     restOfThePosts.forEach(function (post) {
+//         seeMoreButton.onclick = function (event) {
+//             event.target.classList.add("visible");
+//         };
+//     });
+
+// function seeMorePosts() {
+//     const restOfThePosts = blogPostArray.slice(-4);
+//     restOfThePosts.forEach((post) => {
+//         post.style.display = "block";
+//     });
+// }
+// }
+
+// function seeLessPosts() {
+//     for (let i = 0; i < blogPostArray.length; i++) {
+//         // console.log(blogPosts[i]);
+
+//         if (i > numberOfDisplayedPosts) {
+//             blogPostArray[i].style.display = "none";
+//         }
+//         console.log(blogPostArray[i]);
+//     }
+// }
+
+// seeLessPosts();
+
+// function seeMorePosts() {
+//     blogPostArray[i].style.display = "block";
+//     console.log("click click click");
+// }
+
+// function functionA() {
+//     console.log("AAA");
+// }
+
+// const displayedPosts = blogPosts.slice(0, 2);
+// console.log(displayedPosts);
+// renderPosts(displayedPosts);
+// showPosts(displayedPosts);
+
+// if (blogPosts.length > numberOfDisplayedPosts) {
+//     console.log("it is longer than two");
+//     const seeMoreButton = document.querySelector(".cta_more");
+//     seeMoreButton.addEventListener("click", () => {
+//         const seeAllPosts = (blogPosts[i].style.display = "block");
+//         console.log("click");
+//     });
+// }
+// }
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(1, 3);
+// console.log(citrus);
