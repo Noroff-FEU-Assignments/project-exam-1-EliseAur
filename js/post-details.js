@@ -1,4 +1,5 @@
 const postContainer = document.querySelector(".post-details");
+const loader = document.querySelector(".loading-box");
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

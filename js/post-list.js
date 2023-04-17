@@ -1,7 +1,7 @@
 const postURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts";
 
 const postContainer = document.querySelector(".post-list");
-const loader = document.querySelector(".loader");
+const loader = document.querySelector(".loading-box");
 
 async function getPosts() {
     try {
@@ -16,7 +16,7 @@ async function getPosts() {
 getPosts();
 
 function createHTML(posts) {
-    // loader.style.display = "none";
+    loader.style.display = "none";
 
     posts.forEach(function (post) {
         postContainer.innerHTML += `

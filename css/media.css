@@ -49,6 +49,71 @@
         display: block;
     }
 
+    /* Slider */
+
+    .latest-posts button {
+        display: block;
+        font-size: 40px;
+        color: white;
+        background: #763438;
+        border: 0;
+        border-radius: 5px;
+        position: absolute;
+        display: flex;
+        top: 0;
+        bottom: 440px;
+        margin: auto;
+        cursor: pointer;
+        transition: opacity 100ms;
+        opacity: 0.8;
+        padding: 10px 8px 0 8px;
+        height: 57px;
+    }
+
+    .latest-posts button:hover,
+    .slide-arrow:focus {
+        opacity: 1;
+    }
+
+    #arrow-prev {
+        left: -5px;
+    }
+
+    #arrow-next {
+        right: 5px;
+    }
+
+    .latest-posts {
+        position: relative;
+        overflow: hidden;
+        max-width: 1227px;
+        margin: 0 auto;
+    }
+
+    .slider {
+        /* height: calc(75vh - 2rem); */
+        /* width: 100%; */
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        padding-bottom: 5px;
+        grid-gap: 10px;
+        padding-right: 5px;
+        max-width: 1280px;
+    }
+
+    .post-slider {
+        /* width: 100%;
+        height: 100%; */
+        /* flex: 1 0 32.5%; */
+        max-width: 400px;
+        flex: 1 0 49.5%;
+    }
+
     /* Post list */
 
     .post-list-image {
@@ -160,69 +225,7 @@
         max-width: 1280px;
     }
 
-    /* slider */
     /* Slider */
-
-    .latest-posts button {
-        display: block;
-        font-size: 40px;
-        color: white;
-        background: #763438;
-        border: 0;
-        border-radius: 5px;
-        position: absolute;
-        display: flex;
-        top: 0;
-        bottom: 440px;
-        margin: auto;
-        cursor: pointer;
-        transition: opacity 100ms;
-        opacity: 0.8;
-        padding: 10px 8px 0 8px;
-        height: 57px;
-    }
-
-    .latest-posts button:hover,
-    .slide-arrow:focus {
-        opacity: 1;
-    }
-
-    #arrow-prev {
-        left: -5px;
-    }
-
-    #arrow-next {
-        right: 5px;
-    }
-
-    .latest-posts {
-        position: relative;
-        overflow: hidden;
-        max-width: 1227px;
-        margin: 0 auto;
-    }
-
-    .slider {
-        /* height: calc(75vh - 2rem); */
-        /* width: 100%; */
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        overflow: scroll;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-        padding-bottom: 5px;
-        grid-gap: 10px;
-        padding-right: 5px;
-    }
-
-    .post-slider {
-        /* width: 100%;
-        height: 100%; */
-        flex: 1 0 32.5%;
-        max-width: 400px;
-    }
 
     /*post list */
     .post-list .post {
