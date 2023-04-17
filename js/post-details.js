@@ -22,6 +22,7 @@ async function getPostDetails() {
 getPostDetails();
 
 function createHTML(postDetails) {
+    loader.style.display = "none";
     document.title = `V-W Cabin Life | ${postDetails.title.rendered}`;
 
     postContainer.innerHTML = `

@@ -9,6 +9,7 @@ async function getPosts() {
         const getPostResults = await response.json();
         console.log(getPostResults);
         createHTML(getPostResults);
+        seeMore();
     } catch (error) {
         console.log(error);
     }
@@ -35,6 +36,22 @@ function createHTML(posts) {
             </div>
         </div>`;
     });
+}
+
+function seeMore() {
+    const numberOfDisplayedPosts = 2;
+    const blogPosts = document.querySelectorAll(".post");
+    console.log(blogPosts);
+    // const displayedPosts = blogPosts.slice(0, 2);
+    // console.log(displayedPosts);
+    // showPosts(displayedPosts);
+
+    if (blogPosts.length > numberOfDisplayedPosts) {
+        const seeMoreButton = document.querySelector(".cta_more");
+        seeMoreButton.addEventListener("click", () => {
+            const seeAllPosts = posts.slice(-4);
+        });
+    }
 }
 
 // <div class="products">
