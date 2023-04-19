@@ -45,13 +45,25 @@
         padding-top: 20px;
     }
 
+    .latest-posts h2 {
+        max-width: 100%;
+    }
+
+    .latest-posts .cta_more {
+        display: none;
+    }
+
     h1 span {
         display: block;
     }
 
     /* Slider */
 
-    .latest-posts button {
+    .last-post-home {
+        display: flex;
+    }
+
+    .slider-arrow {
         display: block;
         font-size: 40px;
         color: white;
@@ -70,17 +82,18 @@
         height: 57px;
     }
 
-    .latest-posts button:hover,
+    /* .latest-posts button:hover, */
+    .slider-arrow:hover,
     .slide-arrow:focus {
         opacity: 1;
     }
 
     #arrow-prev {
-        left: -5px;
+        left: 2px;
     }
 
     #arrow-next {
-        right: 5px;
+        right: 7px;
     }
 
     .latest-posts {

@@ -9,6 +9,7 @@ async function getPosts() {
         const getPostResults = await response.json();
         console.log(getPostResults);
         createHTML(getPostResults);
+        seeMoreOrLess();
         createSlider();
     } catch (error) {
         console.log(error);
@@ -61,37 +62,30 @@ function createSlider() {
     });
 }
 
-// import { getPosts } from "../../api/posts.js";
-// import { renderPosts } from "./displayPostList.js";
+function seeMoreOrLess() {
+    const blogPosts = document.querySelectorAll(".post");
+    const blogPostArray = Array.from(blogPosts);
 
-// const carouselWrapper = document.querySelector(".carousel-wrapper");
-// const prevButton = document.querySelector(".carousel-prev");
-// const nextButton = document.querySelector(".carousel-next");
+    const firstPosts = blogPostArray.slice(0, 2);
+    console.log(firstPosts);
 
-// let loader = document.querySelector(".lds-ripple");
-// let posts = [];
+    const lastPosts = blogPostArray.slice(-4);
+    console.log(lastPosts);
+    lastPosts.forEach(function (lastPost) {
+        lastPost.classList.add("last-post-home");
+    });
 
-// export async function populateCarousel() {
-//     prevButton.innerText = "<<<";
-//     nextButton.innerText = ">>>";
-//     posts = await getPosts();
+    const seeMoreButton = document.querySelector(".cta_more");
 
-//     renderPosts(posts, ".carousel-wrapper");
-//     if (posts) {
-//         loader.style.display = "none";
-//     }
+    seeMoreButton.addEventListener("click", (e) => {
+        lastPosts.forEach(function (hiddenPost) {
+            hiddenPost.classList.toggle("show-post");
+        });
 
-//     prevButton.addEventListener("click", () => {
-//         carouselWrapper.scrollBy({
-//             left: -carouselWrapper.offsetWidth,
-//             // behavior: "smooth"
-//         });
-//     });
-
-//     nextButton.addEventListener("click", () => {
-//         carouselWrapper.scrollBy({
-//             left: carouselWrapper.offsetWidth,
-//             // behavior: "smooth"
-//         });
-//     });
-// }
+        if (seeMoreButton.innerHTML === `See more posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`) {
+            seeMoreButton.innerHTML = `See less posts <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>`;
+        } else {
+            seeMoreButton.innerHTML = `See more posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
+        }
+    });
+}

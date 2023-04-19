@@ -299,3 +299,22 @@ footer li {
         transform: rotate(1turn);
     }
 }
+
+.last-post,
+.last-post-home {
+    display: none;
+}
+
+.show-post {
+    display: flex;
+}
+
+.cta-box {
+    max-width: 280px;
+    margin: 40px auto;
+}
+
+.cta-box button {
+    width: 100%;
+    padding: 9px 7px;
+}
