@@ -102,3 +102,11 @@ h3 {
     display: block;
     height: 100%;
 }
+
+.last-post {
+    display: none;
+}
+
+.show-post {
+    display: flex;
+}
