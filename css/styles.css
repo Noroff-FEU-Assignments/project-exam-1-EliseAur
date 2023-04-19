@@ -266,7 +266,7 @@ footer li {
 .post-link:hover {
     text-decoration: underline;
     cursor: pointer;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 2.5px;
     text-underline-offset: 0.35rem;
     text-decoration-color: #763438;
 }
