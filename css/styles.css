@@ -76,6 +76,7 @@ footer li {
 .cta:hover {
     background: white;
     color: #763438;
+    cursor: pointer;
 }
 
 .cta_read-more {
@@ -212,6 +213,7 @@ footer h2 {
 .footer-links i:hover {
     background: white;
     color: #4a4443;
+    cursor: pointer;
 }
 
 footer ul {
