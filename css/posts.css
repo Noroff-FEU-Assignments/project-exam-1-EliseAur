@@ -72,6 +72,15 @@ h1 {
     margin: 40px auto;
 }
 
+.cta-box button {
+    width: 100%;
+    padding: 9px 7px;
+}
+
+.cta_less-box {
+    display: none;
+}
+
 .cta i {
     margin-left: 10px;
 }

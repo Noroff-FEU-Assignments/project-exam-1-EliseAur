@@ -9,7 +9,7 @@ async function getPosts() {
         const getPostResults = await response.json();
         console.log(getPostResults);
         createHTML(getPostResults);
-        seeMore();
+        seeMoreOrLess();
         // seeLastPosts();
         // showRestPosts();
     } catch (error) {
@@ -33,14 +33,14 @@ function createHTML(posts) {
                     <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
                     <time class="date">${post.date}</time>
                     <p class="text">${post.excerpt.rendered}</p>
-                    <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+                    <a class="cta cta_read-more" href="post-details.html?id=${post.id}" >Read more</a>
                 </div>
             </div>
         </div>`;
     });
 }
 
-function seeMore() {
+function seeMoreOrLess() {
     // const numberOfDisplayedPosts = 1;
     const blogPosts = document.querySelectorAll(".post");
     const blogPostArray = Array.from(blogPosts);
@@ -57,13 +57,30 @@ function seeMore() {
     });
 
     const seeMoreButton = document.querySelector(".cta_more");
+    const seeLessButton = document.querySelector(".cta_less");
     console.log(seeMoreButton);
     seeMoreButton.onclick = function () {
-        console.log("hello");
+        // const seeLessButton = document.querySelector(".cta_less");
+        // seeLessButton.style.display = "block";
+        // seeMoreButton.style.display = "none";
+
+        // if visible is set remove it, otherwise add it
+        seeMoreButton.classList.toggle("cta_more");
+        seeMoreButton.classList.add("cta_less");
+        seeLessButton.console // seeMoreButton.classList.toggle("see-less-button");
+            .log("hello");
+        // seeMoreButton.innerHTML = `See Less Posts <i class="fas fa-arrow-circle-up"></i>`;
         const visiblelastPosts = blogPostArray.slice(-4);
         visiblelastPosts.forEach(function (visiblePost) {
-            visiblePost.style.display = "block";
+            visiblePost.style.display = "flex";
+            visiblePost.classList.toggle("visible-post");
         });
+
+        // seeMoreButton.onclick = function () {
+        //     visiblelastPosts.forEach(function (visiblePost) {
+        //         visiblePost.style.display = "none";
+        //     });
+        // };
     };
 }
 
