@@ -66,7 +66,7 @@ function seeMoreOrLess() {
     const blogPosts = document.querySelectorAll(".post");
     const blogPostArray = Array.from(blogPosts);
 
-    const firstPosts = blogPostArray.slice(0, 2);
+    const firstPosts = blogPostArray.slice(0, 4);
     console.log(firstPosts);
 
     const lastPosts = blogPostArray.slice(-4);
@@ -82,10 +82,10 @@ function seeMoreOrLess() {
             hiddenPost.classList.toggle("show-post");
         });
 
-        if (seeMoreButton.innerHTML === `See more posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`) {
+        if (seeMoreButton.innerHTML === `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`) {
             seeMoreButton.innerHTML = `See less posts <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>`;
         } else {
-            seeMoreButton.innerHTML = `See more posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
+            seeMoreButton.innerHTML = `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
         }
     });
 }
