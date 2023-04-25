@@ -1,4 +1,4 @@
-const postURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts";
+const postURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts/?=&per_page=25";
 
 const postContainer = document.querySelector(".slider");
 const loader = document.querySelector(".loading-box");
@@ -69,7 +69,7 @@ function seeMoreOrLess() {
     const firstPosts = blogPostArray.slice(0, 4);
     console.log(firstPosts);
 
-    const lastPosts = blogPostArray.slice(-4);
+    const lastPosts = blogPostArray.slice(-9);
     console.log(lastPosts);
     lastPosts.forEach(function (lastPost) {
         lastPost.classList.add("last-post-home");

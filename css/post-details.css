@@ -21,7 +21,7 @@ h3 {
 
 h4 {
     font-size: 1.7em;
-    margin: 15px;
+    margin: 15px 15px 0 15px;
     color: #4a4443;
 }
 
@@ -37,7 +37,7 @@ figure img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
-    margin: 20px 15px;
+    margin: 10px 15px 20px 15px;
 }
 
 .wp-block-image {
@@ -45,7 +45,8 @@ figure img {
 }
 
 p {
-    margin: 15px;
+    margin: 5px 15px 15px 15px;
+    font-size: 1.05em;
 }
 
 .wp-block-post-featured-image {
@@ -158,4 +159,5 @@ p {
     border-radius: 40px 0 40px;
     width: 90%;
     object-fit: cover;
+    max-height: 90%;
 }

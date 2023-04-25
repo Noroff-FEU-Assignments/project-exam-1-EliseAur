@@ -34,16 +34,16 @@ legend {
 }
 
 /* Message error */
-/* .form-error {
+.form-error {
     display: block;
     color: #763438;
     font-weight: bold;
-} */
+}
 
-/* .fill-area {
+.fill-area {
     border: 2px solid #763438;
     padding: 10px;
-} */
+}
 
 /* Message success */
 .valid-input-icon {
