@@ -97,9 +97,9 @@ h1 span {
     margin-bottom: 15px;
 }
 
-.slider-arrow {
+/* .slider-arrow {
     display: none;
-}
+} */
 
 /* Slider */
 
@@ -115,7 +115,8 @@ h1 span {
     border: 0;
     border-radius: 5px;
     position: absolute;
-    display: flex;
+    /* display: flex; */
+    display: none;
     top: 0;
     bottom: 350px;
     margin: auto;

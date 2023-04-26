@@ -281,6 +281,10 @@ footer li {
 
 /* Loader */
 
+.loading-box {
+    margin: 40px auto;
+}
+
 .loading-message {
     text-align: center;
     font-weight: bold;

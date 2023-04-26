@@ -19,6 +19,10 @@ getPosts();
 
 function createHTML(posts) {
     loader.style.display = "none";
+    const arrows = document.querySelectorAll(".slider-arrow");
+    arrows.forEach(function (arrow) {
+        arrow.style.display = "flex";
+    });
 
     posts.forEach(function (post) {
         postContainer.innerHTML += `
