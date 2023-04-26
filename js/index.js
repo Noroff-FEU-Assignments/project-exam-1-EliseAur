@@ -9,7 +9,7 @@ async function getPosts() {
         const getPostResults = await response.json();
         console.log(getPostResults);
         createHTML(getPostResults);
-        seeMoreOrLess();
+        // seeMoreOrLess();
         createSlider();
     } catch (error) {
         console.log(error);
@@ -62,30 +62,30 @@ function createSlider() {
     });
 }
 
-function seeMoreOrLess() {
-    const blogPosts = document.querySelectorAll(".post");
-    const blogPostArray = Array.from(blogPosts);
+// function seeMoreOrLess() {
+//     const blogPosts = document.querySelectorAll(".post");
+//     const blogPostArray = Array.from(blogPosts);
 
-    const firstPosts = blogPostArray.slice(0, 4);
-    console.log(firstPosts);
+//     const firstPosts = blogPostArray.slice(0, 4);
+//     console.log(firstPosts);
 
-    const lastPosts = blogPostArray.slice(-9);
-    console.log(lastPosts);
-    lastPosts.forEach(function (lastPost) {
-        lastPost.classList.add("last-post-home");
-    });
+//     const lastPosts = blogPostArray.slice(-9);
+//     console.log(lastPosts);
+//     lastPosts.forEach(function (lastPost) {
+//         lastPost.classList.add("last-post-home");
+//     });
 
-    const seeMoreButton = document.querySelector(".cta_more");
+//     const seeMoreButton = document.querySelector(".cta_more");
 
-    seeMoreButton.addEventListener("click", (e) => {
-        lastPosts.forEach(function (hiddenPost) {
-            hiddenPost.classList.toggle("show-post");
-        });
+//     seeMoreButton.addEventListener("click", (e) => {
+//         lastPosts.forEach(function (hiddenPost) {
+//             hiddenPost.classList.toggle("show-post");
+//         });
 
-        if (seeMoreButton.innerHTML === `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`) {
-            seeMoreButton.innerHTML = `See less posts <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>`;
-        } else {
-            seeMoreButton.innerHTML = `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
-        }
-    });
-}
+//         if (seeMoreButton.innerHTML === `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`) {
+//             seeMoreButton.innerHTML = `See less posts <i class="fas fa-arrow-circle-up" aria-hidden="true"></i>`;
+//         } else {
+//             seeMoreButton.innerHTML = `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
+//         }
+//     });
+// }
