@@ -1,5 +1,6 @@
 body {
     background: #f0f0f0;
+    color: #4a4443;
 }
 
 .contact-image {
@@ -34,23 +35,33 @@ legend {
 }
 
 /* Message error */
-.form-error {
+.error {
     display: block;
     color: #763438;
     font-weight: bold;
 }
 
-.fill-area {
+/* .fill-area-name,
+.fill-area-email,
+.fill-area-subject,
+.fill-area-message,*/
+.fill-error {
     border: 2px solid #763438;
     padding: 10px;
+}
+
+.valid-icon {
+    display: none;
 }
 
 /* Message success */
 .valid-input-icon {
     color: #3a5964;
     margin-left: 10px;
-    display: none;
-    /* display: inline-block; */
+    display: inline-block;
+    /* font-size: 1.3em;
+    position: relative;
+    top: 40px; */
 }
 
 .form-box {
@@ -88,6 +99,9 @@ span {
     font-weight: bold;
 }
 
+.instruction {
+    font-weight: lighter;
+}
 input,
 textarea {
     margin-bottom: 5px;
@@ -119,4 +133,25 @@ textarea:focus {
     outline: none;
     border: 1px solid #4a4443;
     box-shadow: none;
+}
+
+.submit-message {
+    display: none;
+}
+
+.submit-message {
+    background: #cfe7cd;
+    padding: 10px 15px 25px 15px;
+    margin-top: 20px;
+}
+
+.submit-message h3,
+.submit-message p {
+    margin: 10px 0;
+}
+
+.submit-message .cta {
+    color: #fff;
+    background: #3a5964;
+    border-color: #3a5964;
 }

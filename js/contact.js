@@ -2,10 +2,23 @@
 const form = document.querySelector("form");
 const fullName = document.querySelector("#name");
 const nameError = document.querySelector("#name-error");
+const validNameIcon = document.querySelector(".valid-name-icon");
+const fillAreaName = document.querySelector(".fill-area-name");
+
 const email = document.querySelector("#email");
 const emailError = document.querySelector("#email-error");
+const validEmailIcon = document.querySelector(".valid-email-icon");
+const fillAreaEmail = document.querySelector(".fill-area-email");
+
+const subject = document.querySelector("#subject");
+const subjectError = document.querySelector("#subject-error");
+const validSubjectIcon = document.querySelector(".valid-subject-icon");
+const fillAreaSubject = document.querySelector(".fill-area-subject");
+
 const message = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
+const validMessageIcon = document.querySelector(".valid-message-icon");
+const fillAreaMessage = document.querySelector(".fill-area-message");
 
 // Form elements changed when submit
 const button = document.querySelector(".buttons-cart button");
@@ -13,59 +26,62 @@ const submitMessage = document.querySelector(".submit-message");
 const legend = document.querySelector("legend");
 const input = document.querySelectorAll(".fill-area input");
 const textArea = document.querySelector("textarea");
-const buttonCart = document.querySelector(".buttons-cart");
+const instruction = document.querySelectorAll(".instruction");
 
 // Validate form
 function validateForm(event) {
     event.preventDefault();
 
     // Check input values
-    if (checkLength(fullName.value, 5) === true) {
-        fullName.classList.remove("input-error");
+    if (checkLength(fullName.value, 4) === true) {
+        fillAreaName.classList.remove("fill-error");
         nameError.classList.remove("error");
-        fullName.classList.add("valid");
+        validNameIcon.classList.add("valid-input-icon");
     } else {
-        fullName.classList.add("input-error");
+        fillAreaName.classList.add("fill-error");
         nameError.classList.add("error");
-        fullName.classList.remove("valid");
+        validNameIcon.classList.remove("valid-input-icon");
     }
 
     if (validateEmail(email.value) === true) {
-        email.classList.remove("input-error");
+        fillAreaEmail.classList.remove("fill-error");
         emailError.classList.remove("error");
-        email.classList.add("valid");
+        validEmailIcon.classList.add("valid-input-icon");
     } else {
-        email.classList.add("input-error");
+        fillAreaEmail.classList.add("fill-error");
         emailError.classList.add("error");
-        email.classList.remove("valid");
+        validEmailIcon.classList.remove("valid-input-icon");
+    }
+
+    if (checkLength(subject.value, 14) === true) {
+        fillAreaSubject.classList.remove("fill-error");
+        subjectError.classList.remove("error");
+        validSubjectIcon.classList.add("valid-input-icon");
+    } else {
+        fillAreaSubject.classList.add("fill-error");
+        subjectError.classList.add("error");
+        validSubjectIcon.classList.remove("valid-input-icon");
     }
 
     if (checkLength(message.value, 24) === true) {
-        message.classList.remove("input-error");
+        fillAreaMessage.classList.remove("fill-error");
         messageError.classList.remove("error");
-        message.classList.add("valid");
+        validMessageIcon.classList.add("valid-input-icon");
     } else {
-        message.classList.add("input-error");
+        fillAreaMessage.classList.add("fill-error");
         messageError.classList.add("error");
-        message.classList.remove("valid");
+        validMessageIcon.classList.remove("valid-input-icon");
     }
 
     // Form is valid -> success message and other changes
     function ifContactFormIsValid() {
-        if (checkLength(fullName.value, 0) && validateEmail(email.value) && checkLength(message.value, 24)) {
-            submitMessage.innerHTML = `<div class="message-success">
-                                            <div>
-                                                <h2>Your message was sent</h2>
-                                                <p>We will be in contact with you shortly.</p>
-                                                <a href="index.html" class="cta cta-normal cta-continue">continue shopping</a>
-                                            </div>
-                                        </div>`;
-            button.setAttribute("style", "color: #1f3740; background: #b0e5bf");
-            form.setAttribute("style", "color: #1f3740; background: linear-gradient(#b0e5bf, #224048)");
+        if (checkLength(fullName.value, 4) && checkLength(subject.value, 14) && validateEmail(email.value) && checkLength(message.value, 24)) {
+            submitMessage.style.display = "block";
+            button.setAttribute("style", "color: #fff; background: #3a5964; border-color:#3a5964 ");
             button.innerHTML = "Submitted";
             legend.innerText = "Summary";
-            buttonCart.innerHTML += `<a href="#top" class="cta cta-normal cta-continue">Go to top</a>`;
             input.forEach((item) => (item.style.border = "none"));
+            instruction.forEach((item) => (item.style.display = "none"));
             textArea.style.border = "none";
         }
     }

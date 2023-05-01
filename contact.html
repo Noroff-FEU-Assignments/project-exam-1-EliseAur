@@ -35,35 +35,43 @@
             </div>
             <div class="form-box">
                     <div class="form-text">
-                        <div class="submit-message"></div>
                             <form id="contact-form">
                                 <fieldset>
                                     <legend>Send us an e-mail</legend>
-                                    <div class="fill-area">
-                                        <label for="name"><span>Full name</span> (Required) <span class="valid-input-icon"> <i class="fas fa-check-circle"></i></span></label>
+                                    <div class="fill-area fill-area-name">
+                                        <label for="name"><span>Full name</span> <span class="instruction">(Minimum 5 characters)</span> <span class="valid-icon valid-name-icon"> <i class="fas fa-check-circle"></i></span></label>
                                         <input id="name" name="name" placeholder="Full name" />
-                                        <div class="form-error" id="name-error">Please enter your name</div>
+                                        <div class="form-error" id="name-error">Please enter your name. Minimum 5 characters.</div>
                                     </div>
-                                    <div class="fill-area">
-                                        <label for="email"><span>E-mail</span> (Valid E-mail required) <span class="valid-input-icon"> <i class="fas fa-check-circle"></i></span></label>
+                                    <div class="fill-area fill-area-email">
+                                        <label for="email"><span>E-mail</span> <span class="instruction">(Valid E-mail required)</span> <span class="valid-icon valid-email-icon"> <i class="fas fa-check-circle"></i></span></label>
                                         <input id="email" name="email" placeholder="E-mail" />
-                                        <div class="form-error" id="email-error">Please enter a valid Email adress</div>
+                                        <div class="form-error" id="email-error">Please enter a valid Email adress.</div>
                                     </div>
-                                    <div class="fill-area">
-                                        <label for="subject"><span>Subject</span> (Required) <span class="valid-input-icon"> <i class="fas fa-check-circle"></i></span></label>
+                                    <div class="fill-area fill-area-subject">
+                                        <label for="subject"><span>Subject</span> <span class="instruction">(Minimum 15 characters)</span> <span class="valid-icon valid-subject-icon"> <i class="fas fa-check-circle"></i></span></label>
                                         <input id="subject" name="subject" placeholder="Subject" />
-                                        <div class="form-error" id="subject-error">Please enter a subject</div>
+                                        <div class="form-error" id="subject-error">Please enter a subject. Minimum 15 characters. </div>
                                     </div>
-                                    <div class="fill-area">
-                                        <label for="message"><span>Message</span> (Minimum 25 characters) <span class="valid-input-icon"> <i class="fas fa-check-circle"></i></span></label>
+                                    <div class="fill-area fill-area-message">
+                                        <label for="message"><span>Message</span> <span class="instruction">(Minimum 25 characters)</span> <span class="valid-icon valid-message-icon"> <i class="fas fa-check-circle"></i></span></label>
                                         <textarea id="message" name="message" rows="10" placeholder="Type your message.."></textarea>
-                                        <div class="form-error" id="message-error">Your message must be a minimal length of 25 letters</div>
+                                        <div class="form-error" id="message-error">Your message must be minimum 25 characters.</div>
                                     </div>
                                     <div class="buttons-cart">
                                         <button class="cta">Send</button>
                                     </div>
                                 </fieldset>
                             </form>  
+                            <div class="submit-message">
+                                <div class="message-success">
+                                    <div>
+                                        <h3>Your message was sent</h3>
+                                        <p>Thank you for showing interest in our blog. We are thankful for all feedback or questions and we will be in contact with you shortly.</p>
+                                        <a href="posts.html" class="cta">Check out our posts</a>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
