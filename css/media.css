@@ -251,6 +251,11 @@
     /* Slider */
 
     /*post list */
+
+    .search-btn {
+        height: auto;
+    }
+
     .post-list .post {
         flex-direction: row;
     }

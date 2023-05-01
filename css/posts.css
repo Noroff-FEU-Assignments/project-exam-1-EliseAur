@@ -10,9 +10,6 @@ body {
 }
 .search {
     margin: 0 15px;
-}
-
-.search form {
     display: flex;
 }
 
@@ -20,9 +17,12 @@ body {
     color: white;
     background-color: #763438;
     border: 3.9px solid #763438;
-    height: 35px;
+    height: 40px;
     box-sizing: content-box;
-    padding-left: 7px;
+    padding: 0 5px 0 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .fa-search {
@@ -31,9 +31,14 @@ body {
 
 .search-field {
     border: 3.9px solid #763438;
-    height: 35px;
+    /* height: 35px; */
     width: 100%;
     padding-left: 15px;
+    font-size: 1.2em;
+}
+
+.search-field:focus {
+    outline: none;
 }
 
 h1 {
@@ -96,6 +101,7 @@ h3 {
     color: #4a4443;
     margin-bottom: 15px;
     margin-top: 15px;
+    font-size: 1.7em;
 }
 
 .image-link {

@@ -8,10 +8,25 @@
         <title>Viken-Weiby Cabin Life | Posts</title>
         <script src="https://kit.fontawesome.com/fc6e350578.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/ubd4vnv.css" />
-
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/posts.css" rel="stylesheet" />
         <link href="css/media.css" rel="stylesheet" />
+        <!-- Hotjar Tracking Code for Viken-Weiby Cabin Life -->
+        <script>
+            (function (h, o, t, j, a, r) {
+                h.hj =
+                    h.hj ||
+                    function () {
+                        (h.hj.q = h.hj.q || []).push(arguments);
+                    };
+                h._hjSettings = { hjid: 3473342, hjsv: 6 };
+                a = o.getElementsByTagName("head")[0];
+                r = o.createElement("script");
+                r.async = 1;
+                r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+        </script>
     </head>
     <body>
         <header id="header">
@@ -33,12 +48,16 @@
             <div class="heading-box heading-box_posts">
                 <h1>All our posts</h1>
                 <div class="search">
-                    <form action="#" method="get">
-                        <button type="submit" class="search-btn">
+                    <!-- <form action="#" method="get"> -->
+                    <!-- <button type="submit" class="search-btn">
                             <i class="fas fa-search"></i>
-                        </button>
-                        <input type="text" id="search-field" class="search-field" name="search-field" placeholder="Search" />
-                    </form>
+                        </button> -->
+                    <div class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <input class="search-field" placeholder="Search" />
+                    <!-- <input type="text" id="search-field" class="search-field" name="search-field" placeholder="Search" /> -->
+                    <!-- </form> -->
                 </div>
             </div>
             <div class="post-list" id="post-list">
@@ -105,5 +124,6 @@
             <div class="copy">Copyright &copy;Viken-Weiby Cabin Life</div>
         </footer>
         <script src="js/post-list.js" type="module"></script>
+        <script src="js/search.js" type="module"></script>
     </body>
 </html>

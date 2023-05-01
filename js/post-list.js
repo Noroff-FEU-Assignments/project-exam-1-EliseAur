@@ -1,8 +1,5 @@
 const postURL = "https://elise-aurtande.no/project-exam/cabin-life/wp-json/wp/v2/posts/?=&per_page=25";
 
-const postContainer = document.querySelector(".post-list");
-const loader = document.querySelector(".loading-box");
-
 async function getPosts() {
     try {
         const response = await fetch(postURL);
@@ -10,8 +7,7 @@ async function getPosts() {
         console.log(getPostResults);
         createHTML(getPostResults);
         seeMoreOrLess();
-        // seeLastPosts();
-        // showRestPosts();
+        searchPost(getPostResults);
     } catch (error) {
         console.log(error);
     }
@@ -19,7 +15,9 @@ async function getPosts() {
 getPosts();
 
 function createHTML(posts) {
+    const loader = document.querySelector(".loading-box");
     loader.style.display = "none";
+    const postContainer = document.querySelector(".post-list");
 
     posts.forEach(function (post) {
         postContainer.innerHTML += `
@@ -67,4 +65,21 @@ function seeMoreOrLess() {
             seeMoreButton.innerHTML = `See older posts <i class="fas fa-arrow-circle-down" aria-hidden="true"></i>`;
         }
     });
+}
+
+function searchPost(posts) {
+    const search = document.querySelector(".search-field");
+    search.onkeyup = function (event) {
+        console.log(event);
+
+        const searchInput = event.target.value.trim().toLowerCase();
+
+        const filteredPosts = posts.filter(function (filteredPost) {
+            if (filteredPost.title.rendered.toLowerCase().startsWith(searchInput)) {
+                return true;
+            }
+        });
+
+        createHTML(filteredPosts);
+    };
 }
