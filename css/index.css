@@ -158,13 +158,11 @@ h1 span {
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     overflow: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    padding-bottom: 5px;
     grid-gap: 10px;
-    padding-right: 5px;
     max-width: 795px;
 }
 
@@ -173,5 +171,5 @@ h1 span {
     height: 100%; */
     /* flex: 1 0 32.5%; */
     max-width: 390px;
-    flex: 1 0 99%;
+    flex: 1 0 100%;
 }
