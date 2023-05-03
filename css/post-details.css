@@ -138,12 +138,13 @@ p {
 
 .popup-exit {
     position: absolute;
-    right: 15px;
+    right: 40px;
+    top: 20px;
     cursor: pointer;
     color: white;
     z-index: 100;
     background: none;
-    font-size: 2em;
+    font-size: 1.5em;
     outline: none;
     appearance: none;
     border: 0px;
@@ -157,7 +158,7 @@ p {
     transform: translate(-50%, -50%);
     padding: 20px;
     border-radius: 40px 0 40px;
-    width: 90%;
+    width: 80%;
     object-fit: cover;
-    max-height: 90%;
+    max-height: 80%;
 }

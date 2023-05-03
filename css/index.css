@@ -46,6 +46,11 @@ h1 span {
     margin: 0 auto;
     padding-left: 0;
 }
+
+.cta-slider {
+    margin: -20px auto 25px auto;
+}
+
 .post {
     background: white;
     border-radius: 25px 0 25px 0;
@@ -85,7 +90,7 @@ h1 span {
 }
 
 .post-text {
-    border-radius: 0 0 50px 0;
+    /* border-radius: 0 0 50px 0; */
     width: 92%;
     margin-top: 0;
 }
@@ -110,7 +115,7 @@ h1 span {
 
 .slider-arrow {
     display: block;
-    font-size: 40px;
+    font-size: 33px;
     color: white;
     background: #763438;
     border: 0;
@@ -124,7 +129,7 @@ h1 span {
     cursor: pointer;
     transition: opacity 100ms;
     opacity: 0.8;
-    padding: 10px 8px 10px 8px;
+    padding: 10px 5px 10px 5px;
     height: 70px;
     justify-content: center;
     flex-direction: column;
@@ -141,7 +146,7 @@ h1 span {
 }
 
 #arrow-next {
-    right: 7px;
+    right: 2px;
 }
 
 .latest-posts {

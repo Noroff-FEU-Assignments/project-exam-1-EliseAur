@@ -38,8 +38,9 @@ function createHTML(posts) {
                     <p class="text">${post.excerpt.rendered}</p>
                     
                 </div>
-                <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+                
             </div>
+            <a href="post-details.html?id=${post.id}" class="cta cta_read-more cta-slider">Read more</a>
         </li>`;
     });
 }
