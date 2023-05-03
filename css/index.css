@@ -65,6 +65,7 @@ h1 span {
 .post-bg-brown {
     position: relative;
     top: -14px;
+    margin: 0 5px;
 }
 
 .latest-posts h2 {

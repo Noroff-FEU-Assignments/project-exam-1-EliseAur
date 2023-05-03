@@ -36,8 +36,9 @@ function createHTML(posts) {
                     <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
                     <p class="date">${post.date}</p>
                     <p class="text">${post.excerpt.rendered}</p>
-                    <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
+                    
                 </div>
+                <a href="post-details.html?id=${post.id}" class="cta cta_read-more">Read more</a>
             </div>
         </li>`;
     });

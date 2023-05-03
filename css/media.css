@@ -9,7 +9,7 @@
         font-size: 1.55em;
     }
 
-    .post-text div {
+    .post-text-inner {
         margin: 20px;
     }
 }
@@ -180,7 +180,7 @@
     }
 
     .post-details-box {
-        max-width: 800px;
+        max-width: 700px;
         margin: auto;
     }
 

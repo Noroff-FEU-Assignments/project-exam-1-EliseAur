@@ -27,7 +27,7 @@ function createHTML(posts) {
                 <a href="post-details.html?id=${post.id}" class="image-link"></a>
             </div>
             <div class="post-text">
-                <div>
+                <div class="post-text-inner">
                     <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
                     <time class="date">${post.date}</time>
                     <p class="text">${post.excerpt.rendered}</p>
