@@ -41,10 +41,6 @@ legend {
     font-weight: bold;
 }
 
-/* .fill-area-name,
-.fill-area-email,
-.fill-area-subject,
-.fill-area-message,*/
 .fill-error {
     border: 2px solid #763438;
     padding: 10px;
@@ -59,9 +55,6 @@ legend {
     color: #3a5964;
     margin-left: 10px;
     display: inline-block;
-    /* font-size: 1.3em;
-    position: relative;
-    top: 40px; */
 }
 
 .form-box {
@@ -102,6 +95,7 @@ span {
 .instruction {
     font-weight: lighter;
 }
+
 input,
 textarea {
     margin-bottom: 5px;

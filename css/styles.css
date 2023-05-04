@@ -58,10 +58,6 @@ nav a {
     font-size: 1.5em;
 }
 
-/* p {
-    font-size: 1.07em;
-} */
-
 .cta,
 #search-field,
 footer li {
@@ -157,13 +153,6 @@ footer li a {
     right: 31px;
 }
 
-/* .close-icon {
-    font-size: 2.3em;
-    top: 29px;
-    right: 70px;
-    display: none;
-} */
-
 nav,
 #menu-checkbox,
 #close-menu-checkbox {
@@ -186,12 +175,7 @@ nav,
     color: #4a4443;
 }
 
-/* #menu-checkbox:checked ~ .hamburger-icon {
-    color: #605654;
-} */
-
 /* FOOTER */
-
 .logo-footer {
     width: 160px;
 }
@@ -235,7 +219,6 @@ footer li {
 }
 
 /* POSTS */
-
 .post {
     display: flex;
     flex-direction: column;
@@ -257,11 +240,6 @@ footer li {
     margin: 15px auto;
 }
 
-/* .post:hover {
-    transform: scale(1.03);
-    transition: all 800ms ease;
-} */
-
 .post-link {
     text-decoration: none;
     color: #4a4443;
@@ -280,7 +258,6 @@ footer li {
 }
 
 /* Loader */
-
 .loading-box {
     margin: 40px auto;
 }
