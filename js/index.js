@@ -29,18 +29,18 @@ function createHTML(posts) {
 
         <li class="post post-slider" id="post-slider">
             <div class="post-image">
-                <a href="post-details.html?id=${post.id}" class="image-link"><img src="${post.better_featured_image.source_url}" alt="" /></a>
+                <a aria-label="Read more" href="post-details.html?id=${post.id}" class="image-link"><img src="${post.better_featured_image.source_url}" alt="" /></a>
             </div>
             <div class="post-text">
                 <div class="post-bg-brown">
-                    <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
+                    <a aria-label="Read more" href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
                     <p class="date">${post.date}</p>
                     <p class="text">${post.excerpt.rendered}</p>
                     
                 </div>
                 
             </div>
-            <a href="post-details.html?id=${post.id}" class="cta cta_read-more cta-slider">Read more</a>
+            <a aria-label="Read more" href="post-details.html?id=${post.id}" class="cta cta_read-more cta-slider">Read more</a>
         </li>`;
     });
 }

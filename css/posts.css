@@ -5,7 +5,7 @@ body {
 .heading-box {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 470px;
     margin: 0 auto;
 }
 .search {
@@ -48,7 +48,7 @@ h1 {
 
 .post-list {
     margin: 40px auto;
-    max-width: 500px;
+    max-width: 470px;
 }
 
 .post {

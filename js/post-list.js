@@ -24,14 +24,14 @@ function createHTML(posts) {
 
         <div class="post">
             <div class="post-list-image" style="background-image: url('${post.better_featured_image.source_url}')">
-                <a href="post-details.html?id=${post.id}" class="image-link"></a>
+                <a aria-label="Read more" href="post-details.html?id=${post.id}" class="image-link"></a>
             </div>
             <div class="post-text">
                 <div class="post-text-inner">
-                    <a href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
+                    <a  aria-label="Read more" href="post-details.html?id=${post.id}" class="post-link"><h3>${post.title.rendered}</h3></a>
                     <time class="date">${post.date}</time>
                     <p class="text">${post.excerpt.rendered}</p>
-                    <a class="cta cta_read-more" href="post-details.html?id=${post.id}" >Read more</a>
+                    <a aria-label="Read more" class="cta cta_read-more" href="post-details.html?id=${post.id}" >Read more</a>
                 </div>
             </div>
         </div>`;
