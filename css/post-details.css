@@ -57,6 +57,19 @@ p {
 
 .wp-block-image {
     border-radius: 8px 0 8px;
+    position: relative;
+}
+
+.expand {
+    position: absolute;
+    top: 7px;
+    left: 309px;
+    color: white;
+}
+
+.wp-block-post-featured-image .expand {
+    top: 60px;
+    left: 660px;
 }
 
 .wp-block-post-date {

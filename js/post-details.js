@@ -40,16 +40,26 @@ function createHTML(postDetails) {
 function modal() {
     const body = document.querySelector("body");
     const popupImageWrapper = document.querySelector(".popup-image");
+    // const imageWrapper = document.querySelectorAll(".figure");
     const popupImage = document.querySelector(".popup-image img");
     const images = document.querySelectorAll(".wp-block-image img, .wp-block-post-featured-image img");
 
     console.log(images);
     images.forEach((image) => {
+        // image.innerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
         image.onclick = () => {
             popupImageWrapper.style.display = "block";
             popupImage.src = image.getAttribute("src");
         };
     });
+
+    // imageWrapper.forEach((wrapper) => {
+    //     wrapper.outerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
+    //     // wrapper.onclick = () => {
+    //     //     popupImageWrapper.style.display = "block";
+    //     //     popupImage.src = wrapper.getAttribute("src");
+    //     // };
+    // });
 
     const exitImage = document.querySelector(".popup-exit");
     const imageBackground = document.querySelector(".post-details");
