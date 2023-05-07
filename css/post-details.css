@@ -192,3 +192,7 @@ p {
 .comment-reply-title {
     margin: 15px 0;
 }
+
+.wp-block-avatar img {
+    width: 40px;
+}
