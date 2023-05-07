@@ -1,7 +1,3 @@
-body {
-    background: #f0f0f0;
-}
-
 .heading-box {
     display: flex;
     flex-direction: column;
@@ -14,8 +10,6 @@ body {
 }
 
 .search-btn {
-    color: white;
-    background-color: #763438;
     border: 3.9px solid #763438;
     height: 37px;
     box-sizing: content-box;
@@ -34,7 +28,6 @@ body {
     height: 35px;
     width: 100%;
     padding-left: 15px;
-    font-size: 1.2em;
 }
 
 .search-field:focus {
@@ -52,14 +45,11 @@ h1 {
 }
 
 .post {
-    background: white;
     margin: 15px;
     border-radius: 35px 0 35px 0;
-    box-shadow: 3px 3px 3px #00000012;
 }
 
 .post-text {
-    background: white;
     border-radius: 0 0 50px 0;
 }
 
@@ -88,10 +78,8 @@ h1 {
 }
 
 h3 {
-    color: #4a4443;
     margin-bottom: 15px;
     margin-top: 15px;
-    font-size: 1.7em;
 }
 
 .image-link {

@@ -1,11 +1,6 @@
-body {
-    background: #f0f0f0;
-}
-
 .welcome {
     display: flex;
     flex-direction: column;
-    background: white;
 }
 
 .front_image {
@@ -50,13 +45,10 @@ h1 span {
 }
 
 .post {
-    background: white;
     border-radius: 25px 0 25px 0;
-    box-shadow: 3px 3px 3px #0000003b;
 }
 
 .latest-posts {
-    background: #f0f0f0;
     padding: 20px 15px 0 15px;
     margin: 20px 0;
 }
@@ -103,8 +95,6 @@ h1 span {
 .slider-arrow {
     display: block;
     font-size: 33px;
-    color: white;
-    background: #763438;
     border: 0;
     border-radius: 5px;
     position: absolute;

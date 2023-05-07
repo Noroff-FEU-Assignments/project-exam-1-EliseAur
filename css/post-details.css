@@ -1,5 +1,4 @@
 .post-details {
-    background-color: white;
     margin: 15px 0 40px 0;
     padding: 10px 0 20px;
 }
@@ -11,15 +10,12 @@
 }
 
 h3 {
-    font-size: 2.3em;
     margin: 10px 15px;
-    color: #4a4443;
 }
 
 h4 {
     font-size: 1.5em;
     margin: 15px 15px 0 15px;
-    color: #4a4443;
 }
 
 .heading-box {
@@ -64,7 +60,6 @@ p {
     position: absolute;
     top: 7px;
     left: 309px;
-    color: white;
 }
 
 .wp-block-post-featured-image .expand {
@@ -75,39 +70,8 @@ p {
 .wp-block-post-date {
     text-align: center;
     font-style: italic;
-    font-size: 1.1em;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #4a4443;
-}
-
-.wp-block-categories {
-    list-style: none;
-    padding-left: 0;
-    margin: 15px;
-    text-align: center;
-}
-
-.wp-block-categories li {
-    display: inline-block;
-    margin: 2px;
-    background: #763438;
-    padding: 5px 8px;
-}
-
-.wp-block-categories li a {
-    color: white;
-}
-
-.wp-block-post-terms {
-    text-align: center;
-}
-
-.wp-block-post-terms a {
-    margin: 2px;
-    background: #763438;
-    padding: 5px 8px;
-    color: white;
 }
 
 /* Modal */
@@ -147,7 +111,6 @@ p {
     right: 40px;
     top: 20px;
     cursor: pointer;
-    color: white;
     z-index: 100;
     background: none;
     font-size: 1.5em;
@@ -167,4 +130,17 @@ p {
     width: 80%;
     object-fit: cover;
     max-height: 80%;
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+    display: flex;
+    flex-direction: column;
+}
+
+.wp-block-comments {
+    background: #f0f0f0;
+    padding: 10px;
 }

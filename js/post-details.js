@@ -46,20 +46,12 @@ function modal() {
 
     console.log(images);
     images.forEach((image) => {
-        // image.innerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
+        // image.outerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
         image.onclick = () => {
             popupImageWrapper.style.display = "block";
             popupImage.src = image.getAttribute("src");
         };
     });
-
-    // imageWrapper.forEach((wrapper) => {
-    //     wrapper.outerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
-    //     // wrapper.onclick = () => {
-    //     //     popupImageWrapper.style.display = "block";
-    //     //     popupImage.src = wrapper.getAttribute("src");
-    //     // };
-    // });
 
     const exitImage = document.querySelector(".popup-exit");
     const imageBackground = document.querySelector(".post-details");
