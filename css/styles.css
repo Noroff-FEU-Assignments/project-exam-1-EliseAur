@@ -3,8 +3,12 @@ html {
 }
 
 body {
-    font-family: "open-sans", sans-serif;
     background: #f0f0f0;
+}
+
+body,
+.wp-block-comments-title {
+    font-family: "open-sans", sans-serif;
 }
 
 body,
