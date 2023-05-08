@@ -5,7 +5,8 @@
 }
 
 @media (min-width: 500px) {
-    .post-text h3 {
+    .post-text h3,
+    .post-text h2 {
         font-size: 1.55em;
     }
 
@@ -178,7 +179,7 @@
         max-width: 950px;
     }
 
-    .post-text-inner h3,
+    .post-text-inner h2,
     .nav-menu a {
         font-size: 1.7em;
     }
