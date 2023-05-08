@@ -24,6 +24,7 @@ getPostDetails();
 function createHTML(postDetails) {
     loader.style.display = "none";
     document.title = `V-W Cabin Life | ${postDetails.title.rendered}`;
+    document.getElementsByTagName("META")[3].content = `Read the post about ${postDetails.title.rendered} `;
 
     postContainer.innerHTML = `
     <div class="post-detail-heading">

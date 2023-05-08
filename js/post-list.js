@@ -54,7 +54,7 @@ function seeMoreOrLess() {
 
     const seeMoreButton = document.querySelector(".cta_more");
 
-    seeMoreButton.addEventListener("click", (e) => {
+    seeMoreButton.addEventListener("click", (event) => {
         lastPosts.forEach(function (hiddenPost) {
             hiddenPost.classList.toggle("show-post");
         });
