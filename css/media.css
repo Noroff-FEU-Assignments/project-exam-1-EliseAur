@@ -49,10 +49,6 @@
         max-width: 100%;
     }
 
-    .latest-posts .cta_more {
-        display: none;
-    }
-
     h1 span {
         display: block;
     }
