@@ -338,7 +338,7 @@ textarea {
     padding: 10px 10px;
     box-sizing: border-box;
     border: 0;
-    font-family: "open-sans", sans-serif;
+    font-family: "open-sans", Tahoma, Geneva, Verdana, sans-serif;
     font-display: swap;
 }
 
