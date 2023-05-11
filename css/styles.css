@@ -9,6 +9,7 @@ body {
 body,
 .wp-block-comments-title {
     font-family: "open-sans", Tahoma, Geneva, Verdana, sans-serif;
+    font-display: swap;
 }
 
 body,
@@ -43,6 +44,7 @@ nav a,
 .copy {
     font-family: "lobster", Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
+    font-display: swap;
 }
 
 header,
@@ -336,7 +338,8 @@ textarea {
     padding: 10px 10px;
     box-sizing: border-box;
     border: 0;
-    font-family: "open-sans", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "open-sans", sans-serif;
+    font-display: swap;
 }
 
 input:focus,
