@@ -33,11 +33,11 @@ h1 span {
 
 /*Latest posts*/
 .slider {
-    display: grid;
-    grid-gap: 20px;
-    max-width: 500px;
+    /* display: grid; */
+    /* grid-gap: 20px; */
+    /* max-width: 500px;
     margin: 0 auto;
-    padding-left: 0;
+    padding-left: 0; */
 }
 
 .cta-slider {
@@ -50,7 +50,7 @@ h1 span {
 
 .latest-posts {
     padding: 20px 15px 0 15px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .post-bg-brown {
@@ -96,9 +96,8 @@ h1 span {
     display: block;
     font-size: 33px;
     border: 0;
-    border-radius: 5px;
     position: absolute;
-    display: none;
+    /* display: none; */
     top: 0;
     bottom: 350px;
     margin: auto;
@@ -117,11 +116,11 @@ h1 span {
 }
 
 #arrow-prev {
-    left: 2px;
+    left: 20px;
 }
 
 #arrow-next {
-    right: 2px;
+    right: 20px;
 }
 
 .latest-posts {
@@ -142,10 +141,11 @@ h1 span {
     scroll-behavior: smooth;
     scrollbar-width: none;
     grid-gap: 10px;
-    max-width: 795px;
+    /* max-width: 795px; */
+    max-width: 830px;
 }
 
 .post-slider {
-    max-width: 390px;
+    max-width: 400px;
     flex: 1 0 100%;
 }
