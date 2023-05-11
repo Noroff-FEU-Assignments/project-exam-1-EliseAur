@@ -9,7 +9,6 @@ async function getPosts() {
         const getPostResults = await response.json();
         console.log(getPostResults);
         createHTML(getPostResults);
-        // seeMoreOrLess();
         createSlider();
     } catch (error) {
         console.log(error);
@@ -26,7 +25,6 @@ function createHTML(posts) {
 
     posts.forEach(function (post) {
         postContainer.innerHTML += `
-
         <li class="post post-slider" id="post-slider">
             <div class="post-image">
                 <a aria-label="Read more" href="post-details.html?id=${post.id}" class="image-link">
@@ -40,7 +38,6 @@ function createHTML(posts) {
                     </a>
                     <p class="date">${post.date}</p>
                     <p class="text">${post.excerpt.rendered}</p>
-                    
                 </div>
             </div>
             <a aria-label="Read more" href="post-details.html?id=${post.id}" class="cta cta_read-more cta-slider">Read more</a>

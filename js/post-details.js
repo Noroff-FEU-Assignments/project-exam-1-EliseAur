@@ -37,17 +37,14 @@ function createHTML(postDetails) {
 }
 
 // Modal
-
 function modal() {
     const body = document.querySelector("body");
     const popupImageWrapper = document.querySelector(".popup-image");
-    // const imageWrapper = document.querySelectorAll(".figure");
     const popupImage = document.querySelector(".popup-image img");
     const images = document.querySelectorAll(".wp-block-image img, .wp-block-post-featured-image img");
 
     console.log(images);
     images.forEach((image) => {
-        // image.outerHTML += `<div class="expand"><i class="fas fa-expand"></i></div>`;
         image.onclick = () => {
             popupImageWrapper.style.display = "block";
             popupImage.src = image.getAttribute("src");
