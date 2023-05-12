@@ -28,7 +28,7 @@ function createHTML(posts) {
             </div>
             <div class="post-text">
                 <div class="post-text-inner">
-                    <a  aria-label="Read more" href="post-details.html?id=${post.id}" class="post-link"><h2>${post.title.rendered}</h2></a>
+                    <a  aria-label="${post.title.rendered}" href="post-details.html?id=${post.id}" class="post-link"><h2>${post.title.rendered}</h2></a>
                     <time class="date">${post.date}</time>
                     <p class="text">${post.excerpt.rendered}</p>
                     <a aria-label="Read more about ${post.title.rendered}" class="cta cta_read-more" href="post-details.html?id=${post.id}" >Read more</a>
