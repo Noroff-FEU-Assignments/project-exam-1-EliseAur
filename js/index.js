@@ -47,12 +47,8 @@ function createHTML(posts) {
 
 function createSlider() {
     const slidesContainer = document.querySelector("#slider");
-    console.log(slidesContainer);
-    const postSlide = document.querySelector(".post-slider");
     const prevButton = document.querySelector("#arrow-prev");
     const nextButton = document.querySelector("#arrow-next");
-    // const slideWidth = postSlide.clientWidth;
-    // const slideWidth = slidesContainer.clientWidth;
 
     nextButton.addEventListener("click", () => {
         slidesContainer.scrollBy({

@@ -9,7 +9,7 @@ async function getPosts() {
         seeMoreOrLess();
         searchPost(getPostResults);
     } catch (error) {
-        console.log(error);
+        console.log("Error when calling the API:", error);
     }
 }
 getPosts();
@@ -67,19 +67,21 @@ function seeMoreOrLess() {
     });
 }
 
-function searchPost(posts) {
-    const search = document.querySelector(".search-field");
-    search.onkeyup = function (event) {
-        console.log(event);
+//Search function
+//I did not get this code to Work.
+// function searchPost(posts) {
+//     const search = document.querySelector(".search-field");
+//     search.onkeyup = function (event) {
+//         console.log(event);
 
-        const searchInput = event.target.value.trim().toLowerCase();
+//         const searchInput = event.target.value.trim().toLowerCase();
 
-        const filteredPosts = posts.filter(function (filteredPost) {
-            if (filteredPost.title.rendered.toLowerCase().startsWith(searchInput)) {
-                return true;
-            }
-        });
+//         const filteredPosts = posts.filter(function (filteredPost) {
+//             if (filteredPost.title.rendered.toLowerCase().startsWith(searchInput)) {
+//                 return true;
+//             }
+//         });
 
-        createHTML(filteredPosts);
-    };
-}
+//         createHTML(filteredPosts);
+//     };
+// }

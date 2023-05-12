@@ -38,11 +38,9 @@ function createHTML(postDetails) {
 
 // Modal
 function modal() {
-    const body = document.querySelector("body");
     const popupImageWrapper = document.querySelector(".popup-image");
     const popupImage = document.querySelector(".popup-image img");
     const images = document.querySelectorAll(".wp-block-image img, .wp-block-post-featured-image img");
-
     console.log(images);
     images.forEach((image) => {
         image.onclick = () => {
@@ -52,7 +50,6 @@ function modal() {
     });
 
     const exitImage = document.querySelector(".popup-exit");
-    const imageBackground = document.querySelector(".post-details");
 
     exitImage.onclick = () => {
         popupImageWrapper.style.display = "none";
