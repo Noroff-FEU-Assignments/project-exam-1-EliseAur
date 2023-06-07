@@ -83,11 +83,18 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 3. Allow users to submit comments on a blog post, and post this data to WordPress
 
 
-# Your project title
+# Project Exam 1
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/Noroff-FEU-Assignments/)
 
-A simple overview of the use/purpose of the project.
+
+In this project we were tasked with creating a blog site. We could choose the design and topic covered on the blog. The blog had to have at least the following pages: 
+
+-   Home page
+-   About page
+-   List of blog posts
+-   Blog post specific pages
+-   Contact page.
 
 ## Description
 
