@@ -85,7 +85,7 @@ Note that this is an exam, and therefore tutor support will be limited as per th
 
 # Project Exam 1
 
-![image](https://github.com/Noroff-FEU-Assignments/)
+![image](https://www.elise-aurtande.no/portfolio/wp-content/uploads/2023/06/Viken-Weiby-CabinLife-screenshot-home.jpg)
 
 
 In this project we were tasked with creating a blog site. We could choose the design and topic covered on the blog. The blog had to have at least the following pages: 
