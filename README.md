@@ -1,6 +1,3 @@
-
-
-## Level 1 Process
 # Project Exam 1
 
 ![image](https://www.elise-aurtande.no/portfolio/wp-content/uploads/2023/06/Viken-Weiby-CabinLife-screenshot-home-small-1.jpg)
@@ -38,7 +35,7 @@ As I continue to learn JavaScript I will improve the site accordingly.
 - WordPress (Headless CMS)
 
 ## Getting Started
-Take a look at the live website: [https://reverent-babbage-1fd252.netlify.app](https://teal-cat-7fe9e5.netlify.app)
+Take a look at the live website: https://teal-cat-7fe9e5.netlify.app
 
 ### Installing
 Clone the repo:
