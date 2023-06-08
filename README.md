@@ -1,4 +1,4 @@
-# Project Exam 1
+# Cabin Life - Project Exam 1
 
 ![image](https://www.elise-aurtande.no/portfolio/wp-content/uploads/2023/06/Viken-Weiby-CabinLife-screenshot-home-small-1.jpg)
 
