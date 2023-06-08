@@ -55,5 +55,5 @@ I will be happy for all inquiries regarding the project.
 ## Contact
 Feel free to contact me if you have any questions or feedback about the project.
 - E-mail: elise.aurtande@hotmail.com
-- [GitHub](www.github.com/EliseAur)
+- GitHub: www.github.com/EliseAur
 - Discord: Elise Aurtande - Aug21 PT#2941
