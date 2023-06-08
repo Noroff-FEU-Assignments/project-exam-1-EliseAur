@@ -40,7 +40,7 @@ Take a look at the live website: https://teal-cat-7fe9e5.netlify.app
 ### Installing
 Clone the repo:
 ```bash
-git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-EliseAur.git
+git clone git@github.com:Noroff-FEU-Assignments/project-exam-1-EliseAur.git
 ```
 ### Running
 To run the app, run the following commands:
